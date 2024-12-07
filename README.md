@@ -22,32 +22,29 @@ Met_Todo  DEMO
 - jQuery UI (拖拽功能)
 - Layer.js (弹窗组件)
 - LocalStorage (数据存储)
-- CSS3 动画
+- Vue
 
 ## 📁 项目结构
 
-│project/
-│
-├── index.html // 主页面
-├── css/
-│ ├── style.css // 主样式文件
-│ └── layui.css // Layer 组件样式
-│
-├── js/
-│ ├── index.js // 主逻辑文件
-│ ├── jquery.min.js // jQuery 库
-│ ├── jquery-ui.js // jQuery UI 库
-│ └── layer.js // Layer 弹窗组件
-│
-└── assets/
-└── iconfont/ // 图标字体文件
+
+- index.html // 主页面
+- css/
+   - style.css // 主样式文件
+   - layui.css // Layer 组件样式
+- js/
+   - index.js // 主逻辑文件
+   - jquery.min.js // jQuery 库
+   - jquery-ui.js // jQuery UI 库
+   - layer.js // Layer 弹窗组件
+- assets/
+- iconfont/ // 图标字体文件
 
 ## 💡 核心功能实现
 
 ### 数据管理模块
 
-```
 javascript
+```
 const todoStorage = {
 fetch: function() {
 return JSON.parse(localStorage.getItem('todos') || '[]');
@@ -59,14 +56,13 @@ localStorage.setItem('todos', JSON.stringify(todos));
 ```
 
 html
-<!-- 引入必要的库 -->
 
 ```
+<!-- 引入必要的库 -->
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/layer.js"></script>
-
 ```
 
 ## ⚠️ 注意事项
